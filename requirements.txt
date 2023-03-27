@@ -3,9 +3,7 @@ numpy
 streamlit
 altair
 matplotlib
-dotenv
 psycopg2
 sqlalchemy
-os
 wordcloud
 nltk
