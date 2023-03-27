@@ -7,8 +7,6 @@ import matplotlib.pyplot as plt
 import psycopg2
 import sqlalchemy
 from sqlalchemy.engine.url import URL
-from dotenv import load_dotenv
-import os
 
 #--------------------------------------------------------
 
@@ -16,13 +14,21 @@ import os
 st.set_page_config(layout='wide')
 
 # connecting python with SQL database
-load_dotenv()
+# load_dotenv()
+# conn_str= URL.create(
+#     drivername=os.getenv('drivername'),
+#     host=os.getenv('host'),
+#     username=os.getenv('user'),
+#     password=os.getenv('password'),
+#     database=os.getenv('database')
+# )
+
 conn_str= URL.create(
-    drivername=os.getenv('drivername'),
-    host=os.getenv('host'),
-    username=os.getenv('user'),
-    password=os.getenv('password'),
-    database=os.getenv('database')
+    drivername=st.secrets['drivername'],
+    host=st.secrets['host'],
+    username=st.secrets['user'],
+    password=st.secrets['password'],
+    database=st.secrets['database']
 )
 engine = sqlalchemy.create_engine(conn_str)
 
