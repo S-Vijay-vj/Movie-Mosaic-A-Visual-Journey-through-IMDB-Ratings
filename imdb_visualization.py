@@ -35,7 +35,8 @@ conn = psycopg2.connect(
     host=st.secrets['host'],
     database=st.secrets['database'],
     user=st.secrets['user'],
-    password=st.secrets['password']
+    password=st.secrets['password'],
+    port=st.secrets['port']
 )
 
 imdb=pd.read_sql('select * from imdb',conn)
