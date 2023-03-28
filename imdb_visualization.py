@@ -23,16 +23,22 @@ st.set_page_config(layout='wide')
 #     database=os.getenv('database')
 # )
 
-conn_str= URL.create(
-    drivername=st.secrets['drivername'],
+# conn_str= URL.create(
+#     drivername=st.secrets['drivername'],
+#     host=st.secrets['host'],
+#     username=st.secrets['user'],
+#     password=st.secrets['password'],
+#     database=st.secrets['database']
+# )
+# engine = sqlalchemy.create_engine(conn_str)
+conn = psycopg2.connect(
     host=st.secrets['host'],
-    username=st.secrets['user'],
-    password=st.secrets['password'],
-    database=st.secrets['database']
+    database=st.secrets['database'],
+    user=st.secrets['user'],
+    password=st.secrets['password']
 )
-engine = sqlalchemy.create_engine(conn_str)
 
-imdb=pd.read_sql('select * from imdb',engine)
+imdb=pd.read_sql('select * from imdb',conn)
 
 #--------------------------------------------------------
 
