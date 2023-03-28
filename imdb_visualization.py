@@ -158,6 +158,7 @@ with col2:
     st.subheader(':orange[MOST FREEQUENT WORD IN DESCRIPTION]')
     from wordcloud import WordCloud
     import nltk 
+    nltk.download('stopwords')
     from nltk.corpus import stopwords
     stop_words = set(stopwords.words('english'))
     # Pre-process the movie descriptions to create a frequency table
