@@ -5,32 +5,12 @@ import streamlit as st
 import altair as alt 
 import matplotlib.pyplot as plt
 import psycopg2
-import sqlalchemy
-from sqlalchemy.engine.url import URL
-
 #--------------------------------------------------------
 
 # setting page configuration
 st.set_page_config(layout='wide')
 
 # connecting python with SQL database
-# load_dotenv()
-# conn_str= URL.create(
-#     drivername=os.getenv('drivername'),
-#     host=os.getenv('host'),
-#     username=os.getenv('user'),
-#     password=os.getenv('password'),
-#     database=os.getenv('database')
-# )
-
-# conn_str= URL.create(
-#     drivername=st.secrets['drivername'],
-#     host=st.secrets['host'],
-#     username=st.secrets['user'],
-#     password=st.secrets['password'],
-#     database=st.secrets['database']
-# )
-# engine = sqlalchemy.create_engine(conn_str)
 conn = psycopg2.connect(
     host=st.secrets['host'],
     database=st.secrets['database'],
@@ -39,6 +19,7 @@ conn = psycopg2.connect(
     port=st.secrets['port']
 )
 
+# creating dataframe
 imdb=pd.read_sql('select * from imdb',conn)
 
 #--------------------------------------------------------
