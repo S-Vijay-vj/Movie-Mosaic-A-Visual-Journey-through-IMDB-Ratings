@@ -4,6 +4,5 @@ streamlit
 altair
 matplotlib
 psycopg2-binary
-sqlalchemy
 wordcloud
 nltk
