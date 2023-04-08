@@ -10,7 +10,7 @@ This project is a data analysis and visualization of IMDB ratings of over 10,000
 - [Data Wrangling](#Data-Wrangling)
 - [Data Visualization](#Data-Visualization)
 - [Dashboard Creation](#Dashboard-Creation)
-- [Deployment](#Deployment)
+- [Webpage Deployment](#Webpage-Deployment)
 
 
 
@@ -36,7 +36,7 @@ After cleaning the data, the next step was to perform analysis using Python. Pan
 A Streamlit dashboard was created to present the visualizations in an interactive and user-friendly manner. This dashboard allows the user to filter the data and visualize the results dynamically.
 ![Dashboard visualization](dashboard_visualization.png)
 
-## Deployment
+## Webpage Deployment
 The final step was to deploy the dashboard using Streamlit. The deployment process made it possible for users to access the dashboard online and interact with the visualizations.
 
 ![Streamlit Deployment](streamlit_deployment.png)
