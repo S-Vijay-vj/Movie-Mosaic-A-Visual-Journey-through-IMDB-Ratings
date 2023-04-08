@@ -12,6 +12,11 @@ This project is a data analysis and visualization of IMDB ratings of over 10,000
 
 
 ## Project Flow
+
+## Database Deployment
+A postgreSQL database is deployed in `Railway.app` which is inspired by Heroku and is built with the aim of making app development tools easier to access for developers.
+![Railway.app interface]()
+
 ## Data Wrangling
 The initial step of the project involved cleaning and wrangling of the IMDB ratings data using SQL. This involved dealing with missing values, data type conversion, and data aggregation.
 
