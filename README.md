@@ -6,10 +6,11 @@ This project is a data analysis and visualization of IMDB ratings of over 10,000
 
 
 ## Project Flow
--[Data Wrangling](#Data-Wrangling)
--[Data Visualization](#Data-Visualization)
--[Dashboard Creation](#Dashboard-Creation)
--[Deployment](#Deployment)
+- [Database Deployment](#Database-Deployment)
+- [Data Wrangling](#Data-Wrangling)
+- [Data Visualization](#Data-Visualization)
+- [Dashboard Creation](#Dashboard-Creation)
+- [Deployment](#Deployment)
 
 
 
