@@ -1,17 +1,14 @@
 # IMDB Ratings Analysis and Visualization
 
 This project is a data analysis and visualization of IMDB ratings of over 10,000 movies and shows. The data wrangling part is done in SQL, and the SQL database is connected to Python and visualized using libraries such as pandas, altair, and streamlit. The project also includes a dashboard that is deployed using streamlit.
-<br>[Open Webpage !!](https://s-vijay-vj-imdb-movies-and-shows-anal-imdb-visualization-4gxxsx.streamlit.app/)
-
-
+[Open Webpage !!](https://s-vijay-vj-imdb-movies-and-shows-anal-imdb-visualization-4gxxsx.streamlit.app/)
 
 ## Project Flow
-- [Database Deployment](#Database-Deployment)
-- [Data Wrangling](#Data-Wrangling)
-- [Data Visualization](#Data-Visualization)
-- [Dashboard Creation](#Dashboard-Creation)
-- [Webpage Deployment](#Webpage-Deployment)
-
+  - [Database Deployment](#Database-Deployment)
+  - [Data Wrangling](#Data-Wrangling)
+  - [Data Visualization](#Data-Visualization)
+  - [Dashboard Creation](#Dashboard-Creation)
+  - [Webpage Deployment](#Webpage-Deployment)
 
 
 
