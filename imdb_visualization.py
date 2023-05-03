@@ -51,15 +51,15 @@ col1,col2 = st.columns(2)
 # Correlation heatmap
 with col1:
     st.subheader(':orange[CORRELATION AMONG VARIABLES]')
-#     corr = imdb.corr()
-#     corr_long = corr.reset_index().melt(id_vars='index')
-#     heatmap = alt.Chart(corr_long).mark_rect().encode(
-#         alt.X('index:O',title=''),
-#         alt.Y('variable:O',title=''),
-#         color=alt.Color('value:Q', scale=alt.Scale(domain=[-1,+1],range=['black','orange','black'])),
-#         tooltip=alt.Tooltip('value')
-#     ).properties(height=400, width=450)
-#     st.altair_chart(heatmap)
+    corr = imdb.corr()
+    corr_long = corr.reset_index().melt(id_vars='index')
+    heatmap = alt.Chart(corr_long).mark_rect().encode(
+        alt.X('index:O',title=''),
+        alt.Y('variable:O',title=''),
+        color=alt.Color('value:Q', scale=alt.Scale(domain=[-1,+1],range=['black','orange','black'])),
+        tooltip=alt.Tooltip('value')
+    ).properties(height=400, width=450)
+    st.altair_chart(heatmap)
 
 # Top five shows and movies based on weighted mean
 with col2:
