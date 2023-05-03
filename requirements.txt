@@ -1,6 +1,6 @@
 pandas
 numpy
-streamlit
+streamlit==1.16.0
 altair
 matplotlib
 psycopg2-binary
