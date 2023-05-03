@@ -10,9 +10,6 @@ import psycopg2
 # setting page configuration
 st.set_page_config(layout='wide')
 
-# Set the default theme to "dark"
-st.set_theme('dark')
-
 # connecting python with SQL database
 conn = psycopg2.connect(
     host=st.secrets['host'],
