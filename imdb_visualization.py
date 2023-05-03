@@ -50,7 +50,7 @@ col1,col2 = st.columns(2)
 
 # Correlation heatmap
 with col1:
-    st.subheader(':orange[CORRELATION AMOUNG VARIABLES]')
+    st.subheader(':orange[CORRELATION AMONG VARIABLES]')
     corr = imdb.corr()
     corr_long = corr.reset_index().melt(id_vars='index')
     heatmap = alt.Chart(corr_long).mark_rect().encode(
@@ -136,7 +136,7 @@ with col1:
 
 with col2:
     # create word cloud for description column 
-    st.subheader(':orange[MOST FREEQUENT WORD IN DESCRIPTION]')
+    st.subheader(':orange[MOST FREQUENT WORD IN DESCRIPTION]')
     from wordcloud import WordCloud
     import nltk 
     nltk.download('stopwords')
@@ -155,7 +155,7 @@ with col2:
 col1,col2 = st.columns(2)
 # most frequent certificates 
 with col1:
-    st.subheader(':orange[MOST FRQUENT CERTIFICATES]')
+    st.subheader(':orange[MOST FREQUENT CERTIFICATES]')
     top_certificates=imdb['certificate'].value_counts().reset_index()
     top_certificates.drop([0,4],axis=0,inplace=True)
     top_certificates.rename(columns={'index':'certificate','certificate':'count'},inplace=True)
