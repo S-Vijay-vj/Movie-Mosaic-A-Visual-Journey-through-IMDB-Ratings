@@ -1,7 +1,7 @@
 pandas==1.5.3
 numpy==1.23.5 
 streamlit==1.16.0
-altair
+altair== 4.1.0
 matplotlib
 psycopg2-binary
 wordcloud
