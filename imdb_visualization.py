@@ -51,7 +51,7 @@ col1,col2 = st.columns(2)
 # Correlation heatmap
 with col1:
     st.subheader(':orange[CORRELATION AMONG VARIABLES]')
-    corr = imdb.corr()
+    corr = imdb.corr(numeric_only=True)
     corr_long = corr.reset_index().melt(id_vars='index')
     heatmap = alt.Chart(corr_long).mark_rect().encode(
         alt.X('index:O',title=''),
