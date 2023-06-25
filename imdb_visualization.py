@@ -25,6 +25,8 @@ imdb=pd.read_sql('select * from imdb',conn)
 #--------------------------------------------------------
 
 # creating header
+st.title(f':orange[Movie Mosaic] : A Visual Journey through IMDB Ratings')
+
 col1,col2= st.columns([1,3],gap='small')
 with col1:
     image='https://1000logos.net/wp-content/uploads/2023/01/IMDb-logo.png'
