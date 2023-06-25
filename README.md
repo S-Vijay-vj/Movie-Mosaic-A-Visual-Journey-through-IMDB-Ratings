@@ -1,7 +1,7 @@
 # Movie Mosaic: A Visual Journey through IMDB Ratings
 
 This project is a data analysis and visualization of IMDB ratings of over 10,000 movies and shows. An SQL database is deployed in the cloud and connected to a SQL editor .The data wrangling part is done using SQL, and then SQL database is connected to Python and visualized using libraries such as pandas, altair, and streamlit. The project also includes a dashboard that is deployed using streamlit.
-[Open Webpage !!](https://s-vijay-vj-imdb-movies-and-shows-anal-imdb-visualization-4gxxsx.streamlit.app/)
+[Open Webpage !!](https://s-vijay-vj-movie-mosaic-a-visual-jour-imdb-visualization-2foiwk.streamlit.app/)
 
 ## Project Flow
   - [Database Deployment](#Database-Deployment)
