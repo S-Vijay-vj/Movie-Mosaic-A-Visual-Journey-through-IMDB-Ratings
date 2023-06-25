@@ -164,7 +164,7 @@ with col1:
         theta=alt.Theta('count:Q',stack=True),
         color=alt.Color('certificate:N',scale=alt.Scale(domain=list(top_certificates_5 ['certificate']),range=['darkorange','orange','darkgoldenrod','goldenrod','gold']))
         ).properties(height=340,width=325)
-    st.altair_chart(certificate_pie)
+    st.altair_chart(certificate_pie)                    
 
 # most frequent genres
 with col2:
@@ -208,6 +208,6 @@ with col2:
                 ).properties(height=350,width=650)
     st.altair_chart(top_movie_by_certificate_chart)
 
-# the end :)
+# the end :)    
 st.write('''---''')
 
