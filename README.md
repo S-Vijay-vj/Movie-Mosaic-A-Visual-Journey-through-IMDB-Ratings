@@ -20,6 +20,9 @@ This SQL database is then connected to DBeaver, a free and open source universal
 ![DBeaver_connection](Dbeaver_connection.png)
 ![imdb_table](imdb_table.png)
 
+**Update:** The free tier has been terminated by Railway, so the PostgreSQL database has been moved to **Render**.
+Refer to this documentation for deploying the database in Render: https://render.com/docs/databases
+
 ## Data Wrangling
 The cleaning and wrangling of the IMDB ratings data is done by writing SQL queries in DBeaver. This involved dealing with missing values, data type conversion, and data aggregation, etc...
 <br>[Open SQL query file](data_wrangling_using_SQL.sql)
